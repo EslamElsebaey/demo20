@@ -1,0 +1,62 @@
+.mainBanner {
+  margin-top: 20px;
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after,
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-pagination {
+    bottom: 20px;
+    @include max-768 {
+      bottom: 10px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    left: 10px;
+    right: unset;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    right: 10px;
+    left: unset;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    @include max-768 {
+      display: none;
+    }
+    i {
+      opacity: 0.502;
+      font-size: 24px;
+      color: #000000;
+    }
+  }
+  .mainBanner-parent {
+    position: relative;
+  }
+  .mainBanner-item {
+    width: 100%;
+    display: flex;
+  }
+  .mainBanner-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.402;
+    @include max-768 {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #e04e1d;
+    opacity: 1;
+  }
+}

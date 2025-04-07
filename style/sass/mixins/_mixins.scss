@@ -1,0 +1,71 @@
+// Mixins & helpers
+@mixin en {
+  html[dir="ltr"] & {
+    @content;
+  }
+}
+
+@mixin ar {
+  html[dir="rtl"] & {
+    @content;
+  }
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%transition-2 {
+  transition: all linear 0.2s;
+}
+%transition-3 {
+  transition: all linear 0.3s;
+}
+
+
+// Media Query
+@mixin max-400 {
+  @media only screen and (max-width: 399px) {
+    @content;
+  }
+}
+
+
+@mixin max-768 {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max-992 {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin max-1200 {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+
+
+@mixin min-768 {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin min-992 {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin min-1200 {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+

@@ -1,0 +1,135 @@
+body {
+  font-family: "Tajawal";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  &.overflowVisible {
+    overflow: visible;
+  }
+  &.overflowHidden {
+    overflow: hidden;
+  }
+  padding-top: 97px;
+  @include max-768 {
+    padding-top: 65.6px;
+  }
+}
+input{
+  font-family: inherit;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include max-768 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+a,
+button {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  font-family: inherit;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e04e1d;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}

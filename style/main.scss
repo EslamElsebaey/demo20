@@ -1,0 +1,13 @@
+@import "../style/sass/base/fonts";
+@import "../style/sass/mixins/mixins";
+@import "../style/sass/base/reboot";
+@import "../style/sass/base/common";
+
+// Components
+@import "../style/sass/components/header";
+@import "../style/sass/components/footer";
+@import "../style/sass/components/modal";
+
+// Sections
+@import "../style/sass/sections/mainBanner";
+@import "../style/sass/sections/donation";
