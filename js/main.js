@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Main Swiper
+  // Swiper 
   const mainSwiper = new Swiper(".mainBanner .swiper", {
     loop: true,
     autoplay: true,
