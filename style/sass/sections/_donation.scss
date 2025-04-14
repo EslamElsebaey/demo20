@@ -128,10 +128,15 @@
       }
     }
   }
-  .num {
+  input.num {
     font-size: 20px;
     color: #24156d;
     font-weight: 400;
+    text-align: center;
+    background-color: transparent;
+    width: 35px;
+    border: none;
+    cursor: auto;
   }
 }
 .donate-btn {

@@ -145,8 +145,7 @@ h5,
 h6,
 p {
   margin: 0;
-  font-weight: 500;
-  line-height: 1.2;
+  line-height: normal;
 }
 
 * {
@@ -1395,10 +1394,15 @@ html[dir=ltr] .donation-box .text {
 .donation-counter .counter-btn:hover .icon {
   color: #79ceef;
 }
-.donation-counter .num {
+.donation-counter input.num {
   font-size: 20px;
   color: #24156d;
   font-weight: 400;
+  text-align: center;
+  background-color: transparent;
+  width: 35px;
+  border: none;
+  cursor: auto;
 }
 
 .donate-btn {

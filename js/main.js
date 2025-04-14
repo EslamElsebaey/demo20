@@ -41,14 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const num = counter.querySelector(".num");
 
     incrementBtn.addEventListener("click", () => {
-      let current = parseInt(num.textContent);
-      num.textContent = current + 1;
+      let current = parseInt(num.value);
+      num.value = current + 1;
     });
 
     decrementBtn.addEventListener("click", () => {
-      let current = parseInt(num.textContent);
+      let current = parseInt(num.value);
       if (current > 1) {
-        num.textContent = current - 1;
+        num.value = current - 1;
       }
     });
   });
